@@ -1,0 +1,225 @@
+body {
+    font-family: "Segoe UI", helvetica, verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+	width: 100%;
+	max-width: 1000px;
+	margin-top: 0;
+	margin: 0 auto;
+	font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.left-column {
+    width: 20%; /* Ancho de la columna izquierda */
+    height: 500px; /* Longitud vertical de la columna izquierda */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinea la imagen en la parte superior */
+}
+
+.left-image img {
+	padding: 5px;
+	margin: 10px 0px;
+    width: 150px;
+    height: 250px;
+}
+
+.name-section {
+    padding: 50px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+   	margin-bottom: 75px;
+}
+
+.name-section h1 {
+    margin: 0;
+    color: #900000;
+}
+
+.info-section {
+    width: 20%;
+    color: blue;
+    padding: 10px;
+    text-align: center;
+   	font: 12px "Segoe UI", helvetica, verdana, sans-serif;
+   	margin-bottom: 75px
+}
+
+.spanish-link {
+    width: 10%;
+    padding: 20px;
+    text-align: center;
+   	font: 14px "Segoe UI", helvetica, verdana, sans-serif;
+   	margin-bottom: 75px   	
+}
+
+main {
+    display: flex;
+    flex: 1;
+	width: 100%;
+	max-width: 1000px;
+	margin-top: 0;
+	margin: 0 auto;
+}
+
+.vertical-menu {
+    width: 85%; /* Ajusta según sea necesario */
+    background-color: #f9f9f9;
+    padding: 50px;
+    font: 36px "Segoe UI", helvetica, verdana, sans-serif;
+    text-align: center;
+}
+
+.vertical-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.vertical-menu li a:hover {
+    background-color: #ddd;
+}
+
+.image-links {
+    width: 15%; /* Ajusta según sea necesario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.image-links img {
+    width: 125px; /* Ajusta según sea necesario */
+    margin: 20px;
+}
+
+.vertical-write {
+    width: 85%; /* Ajusta según sea necesario */
+    background-color: #f9f9f9;
+    padding: 50px;
+    font: 36px "Segoe UI", helvetica, verdana, sans-serif;
+    text-align: center;
+}
+
+footer {
+	width: 100%;
+	max-width: 1000px;
+    text-align: left;
+    padding: 50px;
+    font: "Segoe UI", helvetica, verdana, sans-serif;
+    font-size: 16px;
+}
+
+/* Estilos Responsive */
+
+@media screen and (max-width:800px) {
+    header{
+        margin: 1%;
+        width:80%;
+    }
+        .left-column {
+            width:100%;
+        }
+        .name-section{
+            width:100%;
+        }
+        .info-section {
+            width:100%;
+        }
+        .spanish-link {
+            width: 100%;
+            text-align: center;
+        }
+        .vertical-menu{
+            width:100%;
+        }
+        .image-links {
+            width: 100%;
+        }
+        .vertical-write {
+            width:100%;        
+        }
+        footer {
+            width:100%;
+        }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    header{
+        margin: 1%;
+        width:80%;
+    }
+        .left-column {
+            width:80%;
+        }
+        .name-section{
+            width:80%;
+        }
+        .info-section {
+            width:80%;
+        }
+        .spanish-link {
+            width: 80%;
+            text-align: center;
+        }
+        .vertical-menu{
+            width:80%;
+        }
+        .image-links {
+            width: 80%;
+        }
+        .vertical-write {
+            width:80%;        
+        }
+        footer {
+            width:80%;
+        }
+}
+
+@media (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
+    header{
+        margin: 1%;
+        width:80%;
+    }
+        .left-column {
+            width:80%;
+        }
+        .name-section{
+            width:80%;
+        }
+        .info-section {
+            width:80%;
+        }
+        .spanish-link {
+            width: 80%;
+            text-align: center;
+        }
+        .vertical-menu{
+            width:80%;
+        }
+        .image-links {
+            width: 80%;
+        }
+        .vertical-write {
+            width:80%;        
+        }
+        footer {
+            width:80%;
+        }
+}
